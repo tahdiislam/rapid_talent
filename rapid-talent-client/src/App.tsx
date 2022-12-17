@@ -1,12 +1,11 @@
 import "./App.css";
-import OutlinedCard from "./cart";
-import Button from '@mui/material/Button';
-import Header from "./Shared/Header";
+import {  RouterProvider } from "react-router-dom";
+import router from "./Router/router";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
+    <div className="container mx-auto">
+      <RouterProvider router={router}/>
     </div>
   );
 }
