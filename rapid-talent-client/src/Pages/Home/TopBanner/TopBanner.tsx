@@ -47,7 +47,7 @@ export const TopBanner = () => {
             </select>
             <button
               type="submit"
-              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-sky-500 hover:bg-sky-600 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-sky-500 hover:bg-sky-600 focus:shadow-outline focus:outline-none hover:shadow-lg"
             >
               Subscribe
             </button>
@@ -57,7 +57,7 @@ export const TopBanner = () => {
             accusantium doloremque laudantium.
           </p>
           <a
-            href="/"
+            href="#homeJobs2"
             aria-label="Scroll down"
             className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
           >
