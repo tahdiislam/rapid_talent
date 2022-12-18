@@ -37,7 +37,7 @@ export const TopBanner = () => {
             <select
               required
               id="countries"
-              className="bg-gray-900 border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mr-2 h-12 px-4"
+              className="bg-gray-900 border border-gray-300 text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mr-2 h-12 px-4 mb-3 md:mb-0"
             >
               <option selected>Location</option>
               <option value="US">United States</option>
