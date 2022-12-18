@@ -3,6 +3,7 @@ import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/rapid_talent_logo.png";
 
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -10,7 +11,7 @@ function Header() {
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
+            <div className="flex items-center justify-between w-full">
               <div className="flex-shrink-0">
                 <img className="h-8 w-8" src={logo} alt="Workflow" />
               </div>
@@ -20,44 +21,42 @@ function Header() {
                     to="/"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Dashboard
+                    Jobs
                   </Link>
 
                   <Link
                     to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Team
+                    Explore
                   </Link>
 
                   <Link
                     to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Projects
+                    Blogs
                   </Link>
 
                   <Link
                     to="/"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Calendar
-                  </Link>
-
-                  <Link
-                    to="/"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
+                    Feed
                   </Link>
                 </div>
+              </div>
+              <div className="hidden md:block">
+                <Link to="/login">
+                  <button className="text-gray-200 text-lg font-semibold bg-sky-500 hover:bg-sky-600 py-2 px-6 rounded" type="button">Login</button>
+                </Link>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-100 hover:text-gray-300 hover:bg-gray-800 focus:outline-none "
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -102,7 +101,7 @@ function Header() {
 
         <Transition
           show={isOpen}
-          enter="transition ease-out duration-100 transform"
+          enter="transition ease-out duration-200 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
           leave="transition ease-in duration-75 transform"
@@ -116,35 +115,28 @@ function Header() {
                   to="/"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
+                  Jobs
                 </Link>
 
                 <Link
                   to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
+                  Explore
                 </Link>
 
                 <Link
                   to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  Blogs
                 </Link>
 
                 <Link
                   to="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Calendar
-                </Link>
-
-                <Link
-                  to="/"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
+                  Feed
                 </Link>
               </div>
             </div>
