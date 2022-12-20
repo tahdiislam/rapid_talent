@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  GoogleAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
@@ -18,6 +19,9 @@ type User = {
   uid: string;
 };
 
+// auth provider
+const googleProvider = new GoogleAuthProvider()
+
 const AuthProvider = ({ children }: childrenType) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -29,10 +33,10 @@ const AuthProvider = ({ children }: childrenType) => {
   };
 
   // create user with provider
-  //   const createUserWithProvider = (provider) => {
-  //     setLoading(true);
-  //     return signInWithPopup(auth, );
-  //   };
+    // const createUserWithProvider = (provider) => {
+    //   setLoading(true);
+    //   return signInWithPopup(auth, );
+    // };
 
   const authInfo = {
     user,
