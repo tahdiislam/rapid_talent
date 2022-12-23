@@ -3,7 +3,6 @@ import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/rapid_talent_logo.png";
 
-
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -47,8 +46,13 @@ function Header() {
                 </div>
               </div>
               <div className="hidden md:block">
-                <Link to="/">
-                  <button className="text-gray-200 text-lg font-semibold bg-sky-500 hover:bg-sky-600 py-2 px-6 rounded" type="button">Login</button>
+                <Link to="/login">
+                  <button
+                    className="text-gray-200 text-lg font-semibold bg-sky-500 hover:bg-sky-600 py-2 px-6 rounded"
+                    type="button"
+                  >
+                    Login
+                  </button>
                 </Link>
               </div>
             </div>

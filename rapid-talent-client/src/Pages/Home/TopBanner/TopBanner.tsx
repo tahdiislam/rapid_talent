@@ -57,7 +57,7 @@ export const TopBanner = () => {
             accusantium doloremque laudantium.
           </p>
           <a
-            href="#homeJobs2"
+            href="#homeJobs1"
             aria-label="Scroll down"
             className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
           >
