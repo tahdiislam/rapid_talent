@@ -11,7 +11,7 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
+      {/* <div className="flex flex-wrap min-h-screen w-full content-center justify-center bg-gray-200 py-10">
         <div className="flex shadow-md">
           <div
             className="flex flex-wrap content-center justify-center rounded-l-md bg-white"
@@ -89,7 +89,7 @@ const Login = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

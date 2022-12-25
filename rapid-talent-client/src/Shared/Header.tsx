@@ -46,14 +46,14 @@ function Header() {
                 </div>
               </div>
               <div className="hidden md:block">
-                <Link to="/login">
+                {/* <Link to="/login">
                   <button
                     className="text-gray-200 text-lg font-semibold bg-sky-500 hover:bg-sky-600 py-2 px-6 rounded"
                     type="button"
                   >
                     Login
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
