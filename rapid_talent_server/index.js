@@ -26,13 +26,16 @@ const client = new MongoClient(uri, {
 });
 
 async function run() {
-    const Jobs = client.db("rapid_talent").collection("jobs_collection")
+  const Jobs = client.db("rapid_talent").collection("jobs_collection");
 
-    // add jobs
-    app.post("/jobs", (req, res) => {
-        
-    })
+  // add jobs
+  app.post("/jobs", async (req, res) => {
+    const job = req.body;
+    const result = await Jobs.insertOne(job);
+    res.send({ result });
+  });
 }
+run().catch(console.log)
 
 app.listen(port, () => {
   console.log(`Rapid talent server is running on port ${port}`);
