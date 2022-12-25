@@ -28,6 +28,14 @@ const client = new MongoClient(uri, {
 async function run() {
   const Jobs = client.db("rapid_talent").collection("jobs_collection");
 
+  // get all jobs
+  app.get("/jobs", async (req, res) => {
+    const query = {};
+    const cursor = Jobs.find(query);
+    const result = await cursor.toArray();
+    res.send({ result });
+  });
+
   // add jobs
   app.post("/jobs", async (req, res) => {
     const job = req.body;
@@ -35,7 +43,7 @@ async function run() {
     res.send({ result });
   });
 }
-run().catch(console.log)
+run().catch(console.log);
 
 app.listen(port, () => {
   console.log(`Rapid talent server is running on port ${port}`);
