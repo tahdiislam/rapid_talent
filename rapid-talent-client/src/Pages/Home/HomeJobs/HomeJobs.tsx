@@ -1,114 +1,161 @@
 export const HomeJobs = () => {
-    return (
-      <div id="homeJobs1" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
-          <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
-            <span className="inline-block mb-1 sm:mb-4">
-              There is no must in art
-              <br className="hidden md:block" />
-              because art is free.
+  return (
+    <section id="homeJobs1" className="text-gray-600 body-font overflow-hidden">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-wrap -m-12">
+          <div className="p-12 md:w-1/2 flex flex-col items-start">
+            <span className="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+              CATEGORY
             </span>
-            <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
-          </h2>
-          <p className="text-gray-700 lg:text-sm lg:max-w-md">
-            "Class is dead", says Foucault; however, according to Reicher, it is
-            not so much class that is dead, but rather the absurdity, and some
-            would say the paradigm, of class. However, the subject is interpolated
-            into a postpatriarchialist dialectic theory that includes
-            consciousness as a totality.
-          </p>
-        </div>
-        <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-          <a href="/" aria-label="View Item">
-            <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-              <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                alt=""
-              />
-              <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                <p className="mb-4 text-lg font-bold text-gray-100">Mona Lisa</p>
-                <p className="text-sm tracking-wide text-gray-300">
-                  Painted between 1503 and 1517, Da Vinci’s alluring portrait has
-                  been dogged by two questions since the day it was made: Who’s
-                  the subject and why is she smiling?
-                </p>
-              </div>
+            <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              Roof party normcore before they sold out, cornhole vape
+            </h2>
+            <p className="leading-relaxed mb-8">
+              Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
+              portland. VHS man braid palo santo hoodie brunch trust fund.
+              Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie
+              chambray 90's, slow-carb etsy tumeric. Cray pug you probably
+              haven't heard of them hexagon kickstarter craft beer pork chic.
+            </p>
+            <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+              <a className="text-indigo-500 inline-flex items-center">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span className="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                1.2K
+              </span>
+              <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+                6
+              </span>
             </div>
-          </a>
-          <a href="/" aria-label="View Item">
-            <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <a className="inline-flex items-center">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                alt=""
+                alt="blog"
+                src="https://dummyimage.com/104x104"
+                className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
               />
-              <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                <p className="mb-4 text-lg font-bold text-gray-100">
-                  The Starry Night
-                </p>
-                <p className="text-sm tracking-wide text-gray-300">
-                  Vincent Van Gogh’s most popular painting, The Starry Night was
-                  created by Van Gogh at the asylum in Saint-Rémy, where he’d
-                  committed himself in 1889.
-                </p>
-              </div>
+              <span className="flex-grow flex flex-col pl-4">
+                <span className="title-font font-medium text-gray-900">
+                  Holden Caulfield
+                </span>
+                <span className="text-gray-400 text-xs tracking-widest mt-0.5">
+                  UI DEVELOPER
+                </span>
+              </span>
+            </a>
+          </div>
+          <div className="p-12 md:w-1/2 flex flex-col items-start">
+            <span className="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
+              CATEGORY
+            </span>
+            <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
+              Pinterest DIY dreamcatcher gentrify single-origin coffee
+            </h2>
+            <p className="leading-relaxed mb-8">
+              Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal
+              portland. VHS man braid palo santo hoodie brunch trust fund.
+              Bitters hashtag waistcoat fashion axe chia unicorn. Plaid fixie
+              chambray 90's, slow-carb etsy tumeric.
+            </p>
+            <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+              <a className="text-indigo-500 inline-flex items-center">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span className="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                1.2K
+              </span>
+              <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+                6
+              </span>
             </div>
-          </a>
-          <a href="/" aria-label="View Item">
-            <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <a className="inline-flex items-center">
               <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                alt=""
+                alt="blog"
+                src="https://dummyimage.com/103x103"
+                className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
               />
-              <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                <p className="mb-4 text-lg font-bold text-gray-100">The Kiss</p>
-                <p className="text-sm tracking-wide text-gray-300">
-                  Opulently gilded and extravagantly patterned, The Kiss, Gustav
-                  Klimt’s fin-de-siècle portrayal of intimacy, is a mix of
-                  Symbolism and Vienna Jugendstil, the Austrian variant of Art
-                  Nouveau.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="/" aria-label="View Item">
-            <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-              <img
-                className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                alt=""
-              />
-              <div className="absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                <p className="mb-4 text-lg font-bold text-gray-100">
-                  The Harvesters
-                </p>
-                <p className="text-sm tracking-wide text-gray-300">
-                  Bruegel’s fanfare for the common man is considered one of the
-                  defining works of Western art. This composition was one of six
-                  created on the theme of the seasons.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="text-center">
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            View gallery
-            <svg
-              className="inline-block w-3 ml-2"
-              fill="currentColor"
-              viewBox="0 0 12 12"
-            >
-              <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-            </svg>
-          </a>
+              <span className="flex-grow flex flex-col pl-4">
+                <span className="title-font font-medium text-gray-900">
+                  Alper Kamu
+                </span>
+                <span className="text-gray-400 text-xs tracking-widest mt-0.5">
+                  DESIGNER
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-    );
-  };
+    </section>
+  );
+};
