@@ -24,39 +24,44 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
+const Jobs = client.db("rapid_talent").collection("jobs_collection");
+
+app.get("/jobs", async (req, res) => {
+  const query = {};
+  const cursor = Jobs.find(query);
+  const result = await cursor.toArray();
+  res.send({ result });
+});
 
 async function run() {
-  const Jobs = client.db("rapid_talent").collection("jobs_collection");
+  try {
 
-  // get all jobs
-  app.get("/jobs", async (req, res) => {
-    const query = {};
-    const cursor = Jobs.find(query);
-    const result = await cursor.toArray();
-    res.send({ result });
-  });
+    // get all jobs
+    
 
-  // get single job
-  app.get("/jobs/:id", async (req, res) => {
-    const id = req.params.id;
-    const query = { _id: ObjectId(id) };
-    const result = await Jobs.findOne(query);
-    res.send(result);
-  });
+    // get single job
+    app.get("/jobs/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await Jobs.findOne(query);
+      res.send(result);
+    });
 
-  // add jobs
-  app.post("/jobs", async (req, res) => {
-    const job = req.body;
-    const result = await Jobs.insertOne(job);
-    res.send({ result });
-  });
+    // add jobs
+    app.post("/jobs", async (req, res) => {
+      const job = req.body;
+      const result = await Jobs.insertOne(job);
+      res.send({ result });
+    });
 
-  // delete jobs
-  // app.delete("/jobs", async (req, res) => {
-  //   const query = {};
-  //   const result = await Jobs.deleteMany({});
-  //   res.send({ result });
-  // });
+    // delete jobs
+    // app.delete("/jobs", async (req, res) => {
+    //   const query = {};
+    //   const result = await Jobs.deleteMany({});
+    //   res.send({ result });
+    // });
+  } finally {
+  }
 }
 run().catch(console.log);
 
