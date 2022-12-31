@@ -42,6 +42,13 @@ async function run() {
     const result = await Jobs.insertOne(job);
     res.send({ result });
   });
+
+  // delete jobs
+  // app.delete("/jobs", async (req, res) => {
+  //   const query = {};
+  //   const result = await Jobs.deleteMany({});
+  //   res.send({ result });
+  // });
 }
 run().catch(console.log);
 
