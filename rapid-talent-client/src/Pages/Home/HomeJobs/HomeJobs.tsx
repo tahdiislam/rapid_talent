@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { FC, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 type jobsType = [
   {
