@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "63af9aa8bfcd9da64a8735e4",
+    "title": "React Developer",
+    "description": "Are you an expert at React, Webpack, browser APIs, ES8, and the rest of today's modern frontend stack? Do you want to work on a web application used by hundreds of thousands of users? If so, we'd like you to learn about Files.com! At Files.com, we've invested heavily in our React platform and are looking to expand our growing team of frontend developers. As a frontend developer at Files.com, you will work on all of our client-facing web applications that are primarily written in Javascript targeting a web browser. Additionally, you will work on our Android and iOS mobile apps which use React Native.",
+    "salary": "100k - 120k"
+  },
+  {
+    "_id": "63af9afcbfcd9da64a8735e5",
+    "title": "Javascript Developer",
+    "description": "Are you an expert at React, Webpack, browser APIs, ES8, and the rest of today's modern frontend stack? Do you want to work on a web application used by hundreds of thousands of users? If so, we'd like you to learn about Files.com! At Files.com, we've invested heavily in our React platform and are looking to expand our growing team of frontend developers. As a frontend developer at Files.com, you will work on all of our client-facing web applications that are primarily written in Javascript targeting a web browser. Additionally, you will work on our Android and iOS mobile apps which use React Native.",
+    "salary": "110k - 150k"
+  },
+  {
+    "_id": "63af9b12bfcd9da64a8735e6",
+    "title": "MERN Stack Developer",
+    "description": "Are you an expert at React, Webpack, browser APIs, ES8, and the rest of today's modern frontend stack? Do you want to work on a web application used by hundreds of thousands of users? If so, we'd like you to learn about Files.com! At Files.com, we've invested heavily in our React platform and are looking to expand our growing team of frontend developers. As a frontend developer at Files.com, you will work on all of our client-facing web applications that are primarily written in Javascript targeting a web browser. Additionally, you will work on our Android and iOS mobile apps which use React Native.",
+    "salary": "110k - 150k"
+  }
+]
