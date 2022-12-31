@@ -34,7 +34,9 @@ export const HomeJobs = () : JSX.Element | null => {
 
   // loading
   if (loading) {
-    return null;
+    return <div className="w-full h-[150px] flex justify-center items-center">
+      <div className="h-12 w-12 border-2 border-dashed border-sky-500 rounded-full animate-spin duration-150"></div>
+    </div>
   }
   return (
     <section id="homeJobs1" className="text-gray-600 body-font overflow-hidden">
