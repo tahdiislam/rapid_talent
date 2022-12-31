@@ -24,20 +24,18 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-const Jobs = client.db("rapid_talent").collection("jobs_collection");
-
-app.get("/jobs", async (req, res) => {
-  const query = {};
-  const cursor = Jobs.find(query);
-  const result = await cursor.toArray();
-  res.send({ result });
-});
 
 async function run() {
   try {
+    const Jobs = client.db("rapid_talent").collection("jobs_collection");
 
     // get all jobs
-    
+    app.get("/jobs", async (req, res) => {
+      const query = {};
+      const cursor = Jobs.find(query);
+      const result = await cursor.toArray();
+      res.send({ result });
+    });
 
     // get single job
     app.get("/jobs/:id", async (req, res) => {
