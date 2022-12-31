@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { CubeSpinner } from "react-spinners-kit";
 
 type jobsType = [
   {
@@ -15,7 +16,7 @@ type jobType = {
   salary: string;
 };
 
-export const HomeJobs = () : JSX.Element | null => {
+export const HomeJobs = (): JSX.Element | null => {
   const [loading, setLoading] = useState<boolean>(true);
   const [jobs, setJobs] = useState<null | jobsType>(null);
   // get job data
@@ -34,15 +35,17 @@ export const HomeJobs = () : JSX.Element | null => {
 
   // loading
   if (loading) {
-    return <div className="w-full h-[150px] flex justify-center items-center">
-      <div className="h-12 w-12 border-2 border-dashed border-sky-500 rounded-full animate-spin duration-150"></div>
-    </div>
+    return (
+      <div className="w-full h-[150px] flex justify-center items-center">
+        <CubeSpinner size={30} color="#83C8E4" loading={loading} />
+      </div>
+    );
   }
   return (
     <section id="homeJobs1" className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 -m-12">
-        {jobs?.map((job: jobType) => (
+          {jobs?.map((job: jobType) => (
             <div className="p-12 flex flex-col items-start">
               <span className="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">
                 TOP JOBS
